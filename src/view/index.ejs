@@ -1,0 +1,55 @@
+<%- include('./includes/header.ejs') %>
+    </head>
+
+    <body>
+        <div class="main-container">
+            <section data-js="sidebar" class="side-bar">
+                <nav class="side-bar-items">
+                    <div class="side-bar-item">
+                        <i class="bi bi-person-circle side-bar_icon"></i>
+                        <span class="hidden-sidebar txt-icon" data-js="hidden-element">Hello Usuario!</span>
+                    </div>
+
+                    <hr>
+
+
+                    <div class="side-bar-item-dropdown">
+                        <div class="side-bar-item" data-target-dropdown="1">
+                            <i class="bi bi-bus-front side-bar_icon"></i>
+
+                            <div>
+                                <span class="hidden-sidebar txt-icon" data-js="hidden-element">
+                                    Onibus
+                                    <i data-js="icon-txt"
+                                        class="bi bi-caret-down-fill arrow-sidebar hidden-sidebar"></i>
+                                </span>
+                            </div>
+                        </div>
+
+
+                        <div data-dropdown="1"  class="side-bar-item hidden-sidebar">
+                            <div style="width: 75px;"></div>
+
+                            <div class="items-dropdown">
+                                <div class="item-dropdown">
+                                    <span>Cadastrar Onibus</span>
+                                </div>
+
+                                <div class="item-dropdown">
+                                    <span>Meus Onibus</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </nav>
+
+            </section>
+            <main class="main">
+
+
+            </main>
+        </div>
+
+        <%- include('./includes/footer.ejs') %>
